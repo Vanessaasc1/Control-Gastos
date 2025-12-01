@@ -71,6 +71,8 @@ function agregarGasto() {
 }
 
 function eliminarGasto(index) {
+    // HU06 – Eliminar un gasto según su posición en la lista y actualizar los totales
+
     gastos.splice(index, 1);
     localStorage.setItem("gastos", JSON.stringify(gastos));
     mostrarDatos();
