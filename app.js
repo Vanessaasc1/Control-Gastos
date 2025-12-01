@@ -29,8 +29,10 @@ function mostrarDatos() {
 
     const lista = document.getElementById("listaGastos");
     lista.innerHTML = "";
+    // HU04 – Cálculo del total gastado sumando todos los montos registrados
 
     let total = 0;
+
 
     gastos.forEach((gasto, index) => {
         total += gasto.monto;
