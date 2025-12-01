@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Control de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Control de Gastos Personales</h1>
+
+    <!-- Presupuesto -->
+    <div class="form-container">
+        <input type="number" id="presupuesto" placeholder="¿Cuánto dinero tienes?">
+        <button onclick="guardarPresupuesto()">Guardar Presupuesto</button>
+    </div>
+
+    <h3>Presupuesto total: $<span id="presupuestoTotal">0</span></h3>
+
+    <!-- Registro de gastos -->
+    <div class="form-container">
+        <input type="text" id="descripcion" placeholder="Descripción del gasto">
+        <input type="number" id="monto" placeholder="Monto">
+        <button onclick="agregarGasto()">Agregar gasto</button>
+    </div>
+
+    <h2>Listado de gastos</h2>
+    <ul id="listaGastos"></ul>
+
+    <h2>Total gastado: $<span id="total">0</span></h2>
+    <h2>Dinero disponible: $<span id="disponible">0</span></h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
