@@ -51,6 +51,12 @@ function agregarGasto() {
     let descripcion = document.getElementById("descripcion").value;
     let montoInput = document.getElementById("monto").value;
 
+    // HU02 – Función para registrar un gasto con validación básica
+    if (!descripcion.trim() || !monto) {
+    alert("Por favor ingresa descripción y monto antes de agregar el gasto.");
+    return;
+}
+
     // Eliminar puntos
     montoInput = montoInput.replace(/\./g, "");
     const monto = Number(montoInput);
