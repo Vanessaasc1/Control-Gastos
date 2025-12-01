@@ -44,7 +44,6 @@ function mostrarDatos() {
     });
 
     document.getElementById("total").innerText = formatearCOP(total);
-    // HU05 – Cálculo del dinero disponible: presupuesto menos el total gastado
     document.getElementById("disponible").innerText = formatearCOP(presupuesto - total);
 }
 
