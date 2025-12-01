@@ -25,6 +25,8 @@ function guardarPresupuesto() {
 }
 
 function mostrarDatos() {
+    // HU03 – Mejorar visibilidad: mostrar cada gasto formateado en COP en la lista
+
     document.getElementById("presupuestoTotal").innerText = formatearCOP(presupuesto);
 
     const lista = document.getElementById("listaGastos");
