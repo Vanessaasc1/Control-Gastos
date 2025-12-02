@@ -1,7 +1,7 @@
 let gastos = JSON.parse(localStorage.getItem("gastos")) || [];
 let presupuesto = Number(localStorage.getItem("presupuesto")) || 0;
 
-// Función para formatear en pesos colombianos
+// Función para formatear en COP
 function formatearCOP(valor) {
     return valor.toLocaleString("es-CO");
 }
